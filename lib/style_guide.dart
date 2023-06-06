@@ -1,5 +1,6 @@
 // Color style
 import 'dart:ui';
+import 'package:flutter/material.dart';
 
 //Primary colors can be used to create color themes.
 const Color surfaceClr = Color(0xffE7DDDA);
@@ -16,3 +17,37 @@ const Color backgroundApplicationClr = Color(0xffEDEDED);
 const Color buttonDisableClr = Color(0xffCDCDCD);
 const Color textDisableClr = Color(0xff999999);
 const Color textClr = Color(0xff404040);
+
+
+//Text Style
+//Roboto Regular
+
+regularStyle(double size, [
+  Color? clr,
+]) {
+  return TextStyle(
+      fontSize: size,
+      color: clr,
+      fontWeight: FontWeight.w400,
+      fontFamily: 'Roboto'
+  );
+}
+boldStyle(double size, [
+  Color? clr,
+]) {
+  return TextStyle(
+      fontSize: size,
+      color: clr,
+      fontWeight: FontWeight.w600,
+      fontFamily: 'Roboto'
+  );
+}
+
+
+const rHeading1 = TextStyle(
+  fontSize: 28,
+  color: surface2Clr,
+  fontWeight: FontWeight.w600,
+  fontFamily: 'Roboto',
+);
+
